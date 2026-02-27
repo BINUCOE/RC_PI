@@ -1,6 +1,6 @@
 active_dataset: KITTI_00
 
-# ===================== 数据集配置 =====================
+# ===================== Dataset Configuration =====================
 dataset_config:
   KITTI_00:
     image_path: "./Dataset/KITTI/sequences/00/image_00/"
@@ -11,22 +11,22 @@ dataset_config:
     FOV_HORI_DEGREE: 81.60
     FOV_VERT_DEGREE: 29.32
 
-    ODO_TRANS_V_SCALE: 75.0                # 平移速度比例系数
-    ODO_YAW_ROT_V_SCALE: 0.49              # 旋转速度比例系数
-    ODO_HEIGHT_V_SCALE: 5.0                # 高度速度比例系数
-    MAX_TRANS_V_THRESHOLD: 3.9             # 最大平移速度阈值
-    MAX_YAW_ROT_V_THRESHOLD: 3.0           # 最大旋转速度阈值
-    MAX_HEIGHT_V_THRESHOLD: 0.4            # 最大高度速度阈值
+    ODO_TRANS_V_SCALE: 75.0                # Translation velocity scaling factor
+    ODO_YAW_ROT_V_SCALE: 0.49              # Rotation velocity scaling factor
+    ODO_HEIGHT_V_SCALE: 5.0                # Height velocity scaling factor
+    MAX_TRANS_V_THRESHOLD: 3.9             # Maximum translation velocity threshold
+    MAX_YAW_ROT_V_THRESHOLD: 3.0           # Maximum rotation velocity threshold
+    MAX_HEIGHT_V_THRESHOLD: 0.4            # Maximum height velocity threshold
 
-    ODO_SHIFT_MATCH_VERT: 30               # 垂直匹配偏移范围
-    ODO_SHIFT_MATCH_HORI: 50               # 水平匹配偏移范围
+    ODO_SHIFT_MATCH_VERT: 30               # Vertical matching shift range
+    ODO_SHIFT_MATCH_HORI: 50               # Horizontal matching shift range
 
-    ODO_IMG_TRANS_RESIZE_RANGE: [94, 310]      # 平移速度图像缩放范围
-    ODO_IMG_YAW_ROT_RESIZE_RANGE: [94, 310]    # 旋转速度图像缩放范围
-    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [94, 310]   # 高度速度图像缩放范围
+    ODO_IMG_TRANS_RESIZE_RANGE: [94, 310]      # Translation velocity image resize range
+    ODO_IMG_YAW_ROT_RESIZE_RANGE: [94, 310]    # Rotation velocity image resize range
+    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [94, 310]   # Height velocity image resize range
 
 
-    # ROI裁剪范围（[起始, 结束]）
+    # ROI cropping range ([start, end])
     ODO_IMG_TRANS_Y_RANGE: [ 50, 333 ]
     ODO_IMG_TRANS_X_RANGE: [ 200, 1000 ]
     ODO_IMG_YAW_ROT_Y_RANGE: [ 100, 300 ]
@@ -34,11 +34,11 @@ dataset_config:
     ODO_IMG_HEIGHT_V_Y_RANGE: [ 100, 333 ]
     ODO_IMG_HEIGHT_V_X_RANGE: [ 200, 1000 ]
 
-    ## 视觉模板裁剪范围
+    ## Visual template cropping range
     VT_IMG_CROP_X_RANGE: [0, 1241]
     VT_IMG_CROP_Y_RANGE : [0, 376]
-    VT_IMG_RESIZE_X_RANGE: 48              # 缩放后X尺寸
-    VT_IMG_RESIZE_Y_RANGE: 30              # 缩放后Y尺寸
+    VT_IMG_RESIZE_X_RANGE: 48              # Resized X dimension
+    VT_IMG_RESIZE_Y_RANGE: 30              # Resized Y dimension
 
 
   KITTI_07:
@@ -50,22 +50,22 @@ dataset_config:
     FOV_HORI_DEGREE: 81.84
     FOV_VERT_DEGREE: 29.32
 
-    ODO_TRANS_V_SCALE: 55.1                # 平移速度比例系数
-    ODO_YAW_ROT_V_SCALE: 0.48              # 旋转速度比例系数
-    ODO_HEIGHT_V_SCALE: 5.0                # 高度速度比例系数
+    ODO_TRANS_V_SCALE: 55.1                # Translation velocity scaling factor
+    ODO_YAW_ROT_V_SCALE: 0.48              # Rotation velocity scaling factor
+    ODO_HEIGHT_V_SCALE: 5.0                # Height velocity scaling factor
 
-    MAX_TRANS_V_THRESHOLD: 4.1             # 最大平移速度阈值
-    MAX_YAW_ROT_V_THRESHOLD: 3.0           # 最大旋转速度阈值
-    MAX_HEIGHT_V_THRESHOLD: 0.4            # 最大高度速度阈值
+    MAX_TRANS_V_THRESHOLD: 4.1             # Maximum translation velocity threshold
+    MAX_YAW_ROT_V_THRESHOLD: 3.0           # Maximum rotation velocity threshold
+    MAX_HEIGHT_V_THRESHOLD: 0.4            # Maximum height velocity threshold
 
-    ODO_SHIFT_MATCH_VERT: 30               # 垂直匹配偏移范围
-    ODO_SHIFT_MATCH_HORI: 50               # 水平匹配偏移范围
+    ODO_SHIFT_MATCH_VERT: 30               # Vertical matching shift range
+    ODO_SHIFT_MATCH_HORI: 50               # Horizontal matching shift range
 
-    ODO_IMG_TRANS_RESIZE_RANGE: [ 92, 306 ]     # 平移速度图像缩放范围
-    ODO_IMG_YAW_ROT_RESIZE_RANGE: [ 92, 306 ]   # 旋转速度图像缩放范围
-    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [ 92, 306 ]  # 高度速度图像缩放范围
+    ODO_IMG_TRANS_RESIZE_RANGE: [ 92, 306 ]     # Translation velocity image resize range
+    ODO_IMG_YAW_ROT_RESIZE_RANGE: [ 92, 306 ]   # Rotation velocity image resize range
+    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [ 92, 306 ]  # Height velocity image resize range
 
-    # ROI裁剪范围（[起始, 结束]）
+    # ROI cropping range ([start, end])
     ODO_IMG_TRANS_Y_RANGE: [ 50, 333 ]
     ODO_IMG_TRANS_X_RANGE: [ 200, 1000 ]
     ODO_IMG_YAW_ROT_Y_RANGE: [ 100, 300 ]
@@ -73,12 +73,12 @@ dataset_config:
     ODO_IMG_HEIGHT_V_Y_RANGE: [ 100, 333 ]
     ODO_IMG_HEIGHT_V_X_RANGE: [ 200, 1000 ]
 
-    ## 视觉模板裁剪范围
+    ## Visual template cropping range
     VT_IMG_CROP_X_RANGE: [0, 1226]
     VT_IMG_CROP_Y_RANGE : [0, 370]
 
-    VT_IMG_RESIZE_X_RANGE: 48              # 缩放后X尺寸
-    VT_IMG_RESIZE_Y_RANGE: 30              # 缩放后Y尺寸
+    VT_IMG_RESIZE_X_RANGE: 48              # Resized X dimension
+    VT_IMG_RESIZE_Y_RANGE: 30              # Resized Y dimension
 
 
   CUSTOM:
@@ -92,14 +92,14 @@ dataset_config:
     n_steps: 2
 
 
-# ===================== 运行配置 =====================
+# ===================== Runtime Configuration =====================
 process_config:
-  startFrame: 0          # 起始帧
-  endFrame: null         # 结束帧（null表示处理全部）
-  VT_STEP: 1             # 视觉模板更新步长
+  startFrame: 0          # Start frame index
+  endFrame: null         # End frame index (null means process all frames)
+  VT_STEP: 1             # Visual template update step size
 
 
-# ===================== 输出配置 =====================
+# ===================== Output Configuration =====================
 output_config:
-  save_results: true                     # 是否保存结果
-  results_path: "./results/"             # 结果保存路径
+  save_results: true                     # Whether to save results
+  results_path: "./results/"             # Results save path
