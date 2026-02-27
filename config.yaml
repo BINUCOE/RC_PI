@@ -1,0 +1,105 @@
+active_dataset: KITTI_00
+
+# ===================== 数据集配置 =====================
+dataset_config:
+  KITTI_00:
+    image_path: "./Dataset/KITTI/sequences/00/image_00/"
+
+    image_X: 1241
+    image_Y: 376
+
+    FOV_HORI_DEGREE: 81.60
+    FOV_VERT_DEGREE: 29.32
+
+    ODO_TRANS_V_SCALE: 75.0                # 平移速度比例系数
+    ODO_YAW_ROT_V_SCALE: 0.49              # 旋转速度比例系数
+    ODO_HEIGHT_V_SCALE: 5.0                # 高度速度比例系数
+    MAX_TRANS_V_THRESHOLD: 3.9             # 最大平移速度阈值
+    MAX_YAW_ROT_V_THRESHOLD: 3.0           # 最大旋转速度阈值
+    MAX_HEIGHT_V_THRESHOLD: 0.4            # 最大高度速度阈值
+
+    ODO_SHIFT_MATCH_VERT: 30               # 垂直匹配偏移范围
+    ODO_SHIFT_MATCH_HORI: 50               # 水平匹配偏移范围
+
+    ODO_IMG_TRANS_RESIZE_RANGE: [94, 310]      # 平移速度图像缩放范围
+    ODO_IMG_YAW_ROT_RESIZE_RANGE: [94, 310]    # 旋转速度图像缩放范围
+    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [94, 310]   # 高度速度图像缩放范围
+
+
+    # ROI裁剪范围（[起始, 结束]）
+    ODO_IMG_TRANS_Y_RANGE: [ 50, 333 ]
+    ODO_IMG_TRANS_X_RANGE: [ 200, 1000 ]
+    ODO_IMG_YAW_ROT_Y_RANGE: [ 100, 300 ]
+    ODO_IMG_YAW_ROT_X_RANGE: [ 350, 850 ]
+    ODO_IMG_HEIGHT_V_Y_RANGE: [ 100, 333 ]
+    ODO_IMG_HEIGHT_V_X_RANGE: [ 200, 1000 ]
+
+    ## 视觉模板裁剪范围
+    VT_IMG_CROP_X_RANGE: [0, 1241]
+    VT_IMG_CROP_Y_RANGE : [0, 376]
+    VT_IMG_RESIZE_X_RANGE: 48              # 缩放后X尺寸
+    VT_IMG_RESIZE_Y_RANGE: 30              # 缩放后Y尺寸
+
+
+  KITTI_07:
+    image_path: "./Dataset/KITTI/sequences/07/image_00/"
+
+    image_X: 1226
+    image_Y: 370
+
+    FOV_HORI_DEGREE: 81.84
+    FOV_VERT_DEGREE: 29.32
+
+    ODO_TRANS_V_SCALE: 55.1                # 平移速度比例系数
+    ODO_YAW_ROT_V_SCALE: 0.48              # 旋转速度比例系数
+    ODO_HEIGHT_V_SCALE: 5.0                # 高度速度比例系数
+
+    MAX_TRANS_V_THRESHOLD: 4.1             # 最大平移速度阈值
+    MAX_YAW_ROT_V_THRESHOLD: 3.0           # 最大旋转速度阈值
+    MAX_HEIGHT_V_THRESHOLD: 0.4            # 最大高度速度阈值
+
+    ODO_SHIFT_MATCH_VERT: 30               # 垂直匹配偏移范围
+    ODO_SHIFT_MATCH_HORI: 50               # 水平匹配偏移范围
+
+    ODO_IMG_TRANS_RESIZE_RANGE: [ 92, 306 ]     # 平移速度图像缩放范围
+    ODO_IMG_YAW_ROT_RESIZE_RANGE: [ 92, 306 ]   # 旋转速度图像缩放范围
+    ODO_IMG_HEIGHT_V_RESIZE_RANGE: [ 92, 306 ]  # 高度速度图像缩放范围
+
+    # ROI裁剪范围（[起始, 结束]）
+    ODO_IMG_TRANS_Y_RANGE: [ 50, 333 ]
+    ODO_IMG_TRANS_X_RANGE: [ 200, 1000 ]
+    ODO_IMG_YAW_ROT_Y_RANGE: [ 100, 300 ]
+    ODO_IMG_YAW_ROT_X_RANGE: [ 350, 850 ]
+    ODO_IMG_HEIGHT_V_Y_RANGE: [ 100, 333 ]
+    ODO_IMG_HEIGHT_V_X_RANGE: [ 200, 1000 ]
+
+    ## 视觉模板裁剪范围
+    VT_IMG_CROP_X_RANGE: [0, 1226]
+    VT_IMG_CROP_Y_RANGE : [0, 370]
+
+    VT_IMG_RESIZE_X_RANGE: 48              # 缩放后X尺寸
+    VT_IMG_RESIZE_Y_RANGE: 30              # 缩放后Y尺寸
+
+
+  CUSTOM:
+    image_path: "./Dataset/Self_collected/"
+    image_X: 320
+    image_Y: 180
+    FOV_HORI_DEGREE: 109.0
+    FOV_VERT_DEGREE: 60.0
+    ODO_YAW_ROT_V_SCALE: 1.0
+    VT_IMG_CROP_X_RANGE: [0, 320]
+    n_steps: 2
+
+
+# ===================== 运行配置 =====================
+process_config:
+  startFrame: 0          # 起始帧
+  endFrame: null         # 结束帧（null表示处理全部）
+  VT_STEP: 1             # 视觉模板更新步长
+
+
+# ===================== 输出配置 =====================
+output_config:
+  save_results: true                     # 是否保存结果
+  results_path: "./results/"             # 结果保存路径
