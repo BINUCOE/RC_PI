@@ -1,4 +1,4 @@
-# RC_PI
+# Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration
 The code for "Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration".
 
 ![](images/pipeline.png)
