@@ -1,7 +1,7 @@
 # Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration
 The code for "Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration".
 
-![](images/pipeline.png)
+<img src="images/pipeline.png" width="700">
 
 ## Introduction
 This repository contains the code for the paper "Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration". The code is organized into several modules, including data, model training, and inference. The main components of the code are as follows:
@@ -31,18 +31,13 @@ trajectories are aligned with the ground truth using rigid transformations and u
 
 ![](images/trajectory.png)
 
+_Comparison of the ATE_
+
+<img src="images/Table1.png" width="700">
+
 _Comparison of Average Processing Time per Frame on PC and Edge Platforms_
 
-| **Dataset**        | **Frames** | **Resolution**  | **NeuroSLAM (s/frame)** | **This Work (s/frame)** | **Improvement (\%)** |
-|--------------------|------------|-----------------|-------------------------|-------------------------|----------------------|
-| **PC Platform**    |            |                 |                         |                         |                      |
-| KITTI-00           | 4541       | 1241×376        | 0.119                   | **0.048**               | **59.7**             |
-| KITTI-07           | 1101       | 1226×370        | 0.114                   | **0.047**               | **58.8**             |
-| Self-collected     | 2613       | 320×180         | 0.123                   | **0.084**               | **31.7**             |
-| **Edge Platform**  |            |                 |                         |                         |                      |
-| KITTI-00           | 4541       | 1241×376        | 0.774                   | **0.304**               | **60.7**             |
-| KITTI-07           | 1101       | 1226×370        | 0.768                   | **0.307**               | **60.0**             |
-| Self-collected     | 2613       | 320×180         | 0.757                   | **0.527**               | **30.4**             |
+<img src="images/Table2.png" width="700">
 
 
 
