@@ -44,4 +44,4 @@ _Comparison of Average Processing Time per Frame on PC and Edge Platforms_
 ## License
 This project is licensed under the Apache License. See the LICENSE file for details.
 
-<a href="https://clustrmaps.com/site/1c9eq"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=JFft-77-gzOiolxh9uY6QcZxuDciGjDmpsLD11ai3Zw&cl=ffffff" /></a>
+<a href="https://mapmyvisitors.com/web/1c7ms"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=3QJsDgtLbTC3V4IBz2l8fHGLrVDPuHaLPSmNfhkC9Ds&cl=ffffff" /></a>
