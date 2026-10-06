@@ -3,6 +3,17 @@ The code for "Learning Attractor Dynamics via Reservoir Computing for Efficient 
 
 <img src="images/pipeline.png" width="700">
 
+BibTeX Citation
+
+```bibtex
+@inproceedings{zhang2026learning,
+  title = {Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration},
+  booktitle = {2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  author = {Zhang, Youdong and He, Xu and Meng, Xiaolin and Mo, Lingfei and An, Xiangdong},
+  year = 2026
+}
+```
+
 ## Introduction
 This repository contains the code for the paper "Learning Attractor Dynamics via Reservoir Computing for Efficient and Robust Path Integration". The code is organized into several modules, including data, model training, and inference. The main components of the code are as follows:
 
